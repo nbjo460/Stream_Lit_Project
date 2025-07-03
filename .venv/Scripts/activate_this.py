@@ -1,5 +1,8 @@
 import matplotlib.pyplot as plt
 import numpy as np
+import streamlit as st
+
+st.write("ff")
 
 x = [1,2,3,4,5]
 y = [600,700,800,900,1000]
@@ -31,7 +34,8 @@ axs[1, 1].set_xlabel("time")
 axs[1, 1].set_ylabel("money")
 
 plt.tight_layout()
-plt.show()
+
+st.pyplot(fig)
 
 # plt.figure()
 # plt.plot(x, y)
