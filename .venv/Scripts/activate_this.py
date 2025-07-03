@@ -1,8 +1,12 @@
 import matplotlib.pyplot as plt
 import numpy as np
 import streamlit as st
+import pandas as pd
 
 st.write("ff")
+movies_data = pd.read_csv("https://raw.githubusercontent.com/danielgrijalva/movie-stats/7c6a562377ab5c91bb80c405be50a0494ae8e582/movies.csv")
+
+st.write(movies_data)
 
 x = [1,2,3,4,5]
 y = [600,700,800,900,1000]
